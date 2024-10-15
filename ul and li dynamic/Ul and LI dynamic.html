@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ul and li dynamic</title>
+</head>
+
+<body id="list">
+    <script>
+        let arr = ['dog', 'cow', 'cat', 'lion', 'tiger', 'fox'];
+
+        let list = document.getElementById('list');
+
+        let order = document.createElement('order');
+
+        arr.forEach((valve) => {
+            let li = document.createElement('li');
+            li.innerText = valve
+            order.appendChild(li)
+        })
+        list.appendChild(order);
+
+
+
+    </script>
+
+</body>
+
+</html>
